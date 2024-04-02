@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/experiment.css') }}">
+</head>
+<body>
+    <div id="app">
+        <!-- The app content will be rendered here -->
+    </div>
+
+    <script>
+        var sessionId = '{{ session_id }}';
+        var experimentNumber = {{ experiment_number }};
+        var assignedTask = '{{ assigned_task }}';
+    </script>
+    <script src="{{ url_for('static', filename='js/experiment.js') }}"></script>
+</body>
+</html>

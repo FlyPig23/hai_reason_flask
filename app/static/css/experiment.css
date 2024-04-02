@@ -1,0 +1,307 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.task-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-dialogue-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    flex-basis: 48%;
+    margin-right: 2%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: auto;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user-message,
+.system-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: left;
+    padding: 5px 10px 5px 10px;
+}
+
+.user-message {
+    justify-content: flex-start;
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    margin-right: 30%;
+    margin-left: 0;
+}
+
+.system-message {
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    color: #333;
+    align-self: flex-start;
+    margin-right: 0;
+    margin-left: 30%;
+}
+
+.system-message .avatar {
+    order: 1;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.dialogue-container {
+    flex-basis: 48%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: auto;
+}
+
+.dialogue-history {
+    height: 85%;
+    overflow-y: auto;
+    max-height: 700px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.user-prediction-section {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.profile-features {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-features h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-feature {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.feature-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.feature-value {
+    margin-left: 10px;
+    color: #333;
+}
+
+.model-prediction {
+    background-color: #f2f2f7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.model-prediction h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.model-prediction div {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.user-prediction-section h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.prediction-button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.prediction-button:hover {
+    background-color: #999;
+}
+
+.above-button.selected-button,
+.will-reoffend-button.selected-button {
+    background-color: #bf3131;
+    color: #fff;
+}
+
+.below-button.selected-button,
+.will-not-reoffend-button.selected-button {
+    background-color: #436850;
+    color: #fff;
+    cursor: pointer;
+}
+
+.above-button:hover,
+.will-reoffend-button:hover {
+    background-color: #bf3131;
+    color: white;
+    cursor: pointer;
+}
+
+.below-button:hover,
+.will-not-reoffend-button:hover {
+    background-color: #436850;
+    color: white;
+    cursor: pointer;
+}
+
+.above-button,
+.will-reoffend-button {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.below-button,
+.will-not-reoffend-button {
+    background-color: #3bb5ac;
+    color: white;
+}
+
+.submit-button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button.active-button {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.submit-button.active-button:hover {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+}
+
+.agreement-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.agreement-button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agreement-button:hover {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.agreement-button:disabled {
+    background-color: #ccc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    outline: none;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal-close-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-close-button:hover {
+    background-color: #0056b3;
+}

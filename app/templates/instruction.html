@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instructions</title>
+    <!-- Include CSS -->
+</head>
+<body>
+    <div>
+        <h2>Instruction Page</h2>
+        <p>Here are the instructions for the experiment...</p>
+        <form action="/experiment/1" method="get">
+            <input type="hidden" name="session_id" value="{{ session_id }}">
+            <input type="hidden" name="assigned_task" value="{{ assigned_task }}">
+            <button type="submit" class="button">Start Experiment</button>
+        </form>
+    </div>
+</body>
+</html>
